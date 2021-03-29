@@ -1,0 +1,71 @@
+
+
+.nav-item:hover{
+    background-color: blueviolet;
+}
+
+
+header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1A1A1A;
+}
+header h1{
+    font-family: 'Train One', cursive;
+    font-size: 5rem;
+    color: white;
+}
+
+#header-title{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#hr-header{
+    color: white;
+    background-color: #212529;
+    padding: 0;
+    margin: 0;
+}
+
+#header-logo{
+    height: 150px;
+    border: none;
+    display: inline;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+#particles-js{
+    z-index: -1;
+}
+
+.album{
+    height: 200px;
+    width: 200px;
+    border-bottom: 1rem solid black;
+    border-top: 0.25rem solid black;
+    border-left: 0.25rem solid black;
+    border-right: 0.25rem solid black;
+}
+
+#primero{
+    transform: rotate(-30deg);
+    z-index: -100;
+}
+#segundo{
+    transform: rotate(10deg);
+}
+#tercero{
+    transform: rotate(50deg);
+    z-index: -100;
+}
+
+.album-fotos{
+    align-items: center;
+    justify-content: center;
+}
+
