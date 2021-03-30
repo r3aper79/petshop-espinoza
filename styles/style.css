@@ -1,5 +1,6 @@
-
-
+nav{
+    border-top: 2px solid white;
+}
 .nav-item:hover{
     background-color: blueviolet;
 }
@@ -25,22 +26,12 @@ header h1{
     padding-top: 1rem;
 }
 
-#hr-header{
-    color: white;
-    background-color: #212529;
-    padding: 0;
-    margin: 0;
-}
-
 #header-logo{
     height: 150px;
     border: none;
     display: inline;
     padding-right: 1rem;
     padding-bottom: 1rem;
-}
-#particles-js{
-    z-index: -1;
 }
 
 .album{
@@ -53,7 +44,7 @@ header h1{
 }
 
 #primero{
-    transform: rotate(-30deg);
+    transform: rotate(-28deg);
     z-index: -100;
 }
 #segundo{
@@ -69,3 +60,150 @@ header h1{
     justify-content: center;
 }
 
+
+#particles-js{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #1A1A1A;
+    z-index: -100 !important;
+}
+
+.particles-container{
+    position: relative;
+    z-index: 99;
+}
+
+.formulario{
+    align-items: center;
+    justify-items: center;
+    border: 2px double rgb(85, 170, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3%;
+    width: 40vw;
+}
+
+input{
+    border: 3px solid #252730;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(34, 36,44);
+    font-family: 'Averia Serif Libre', cursive;
+}
+input:hover{
+    border: 3px solid rgb(46,46,60);
+}
+input:focus{
+    border: 3px solid rgb(85, 170, 255);
+    background-color: rgb(43,45,56);
+    outline: none;
+}
+
+label{
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+}
+textarea{
+    border: 3px solid #252730;
+    border-radius: 20px;
+    color: #fff;
+    padding-left: 10px;
+    background-color: rgb(34, 36,44);
+    font-family: 'Averia Serif Libre', cursive;
+}
+textarea:hover{
+    border: 3px solid rgb(46,46,60);
+}
+textarea:focus{
+    border: 3px solid rgb(85, 170, 255);
+    background-color: rgb(43,45,56);
+    outline: none;
+}
+
+h3,h4{
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.button-contact{
+    font-family: 'Averia Serif Libre', cursive;
+    background-color: rgb(43,45,56);
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    height: 33px;
+}
+.button-contact:hover{
+    border: 3px solid rgb(85, 170, 255);
+}
+
+div.btn-container{
+    float: right;
+}
+
+footer{
+    margin-top: 5rem;
+    background-color:   #1A1A1A;
+    border-top: 2px solid white;
+    color: white;
+}
+.icon{
+    width: 6rem;
+}
+.icon:hover{
+    transition: all .05s ease;
+    transform: scale(1.2,1.2);
+}
+.icon-f{
+    margin-left: 10px;
+    width: 4rem;
+}
+.icon-f:hover{
+    transition: all .05s ease;
+    transform: scale(1.2,1.2);
+}
+.h3-container{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+
+select {
+    background: rgb(43,45,56);
+    border-radius: 10px;
+    color: white;
+    border: 3px solid #252730;
+    font-size: 14px;
+    height: 38px;
+    padding: 5px;
+    width: 200px;
+}
+select:focus{ 
+    outline: none;
+    border: 3px solid rgb(85, 170, 255);
+}
+select:hover{
+    border: 3px solid rgb(46,46,60);
+}
+
+.tarjetas{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+a{
+    text-decoration: none;
+}
+ 
