@@ -37,18 +37,39 @@ header h1{
 .album{
     height: 200px;
     width: 200px;
-    border-bottom: 1rem solid black;
-    border-top: 0.25rem solid black;
-    border-left: 0.25rem solid black;
-    border-right: 0.25rem solid black;
+    border-bottom: 1rem solid white;
+    border-top: 0.25rem solid white;
+    border-left: 0.25rem solid white;
+    border-right: 0.25rem solid white;
 }
 
 #primero{
     transform: rotate(-28deg);
     z-index: -100;
 }
+#primero:hover{
+    border-bottom: 1rem solid rgb(85, 170, 255);
+    border-top: 0.25rem solid rgb(85, 170, 255);
+    border-left: 0.25rem solid rgb(85, 170, 255);
+    border-right: 0.25rem solid rgb(85, 170, 255);
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+}
 #segundo{
     transform: rotate(10deg);
+}
+#segundo:hover{
+    border-bottom: 1rem solid rgb(85, 170, 255);
+    border-top: 0.25rem solid rgb(85, 170, 255);
+    border-left: 0.25rem solid rgb(85, 170, 255);
+    border-right: 0.25rem solid rgb(85, 170, 255);
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+}
+#tercero:hover{
+    border-bottom: 1rem solid rgb(85, 170, 255);
+    border-top: 0.25rem solid rgb(85, 170, 255);
+    border-left: 0.25rem solid rgb(85, 170, 255);
+    border-right: 0.25rem solid rgb(85, 170, 255);
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
 }
 #tercero{
     transform: rotate(50deg);
@@ -92,7 +113,7 @@ input{
     color: #fff;
     text-align: center;
     background-color: rgb(34, 36,44);
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Josefin Slab', serif;
 }
 input:hover{
     border: 3px solid rgb(46,46,60);
@@ -105,7 +126,7 @@ input:focus{
 
 label{
     color: white;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Josefin Slab', serif;
 }
 textarea{
     border: 3px solid #252730;
@@ -113,7 +134,7 @@ textarea{
     color: #fff;
     padding-left: 10px;
     background-color: rgb(34, 36,44);
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Josefin Slab', serif;
 }
 textarea:hover{
     border: 3px solid rgb(46,46,60);
@@ -126,16 +147,27 @@ textarea:focus{
 
 h3,h4{
     color: white;
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Josefin Slab', serif;
 }
 
 .button-contact{
-    font-family: 'Averia Serif Libre', cursive;
+    font-family: 'Josefin Slab', serif;
     background-color: rgb(43,45,56);
     color: white;
     border-radius: 20px;
     width: 100px;
     height: 33px;
+}
+.btn-carro{
+    font-family: 'Josefin Slab', serif;
+    background-color: rgb(43,45,56);
+    border: 3px solid rgb(43,45,56);
+    color: white;
+    border-radius: 20px;
+    width: 200px;
+}
+.btn-carro:hover{
+    border: 3px solid rgb(85, 170, 255);
 }
 .button-contact:hover{
     border: 3px solid rgb(85, 170, 255);
@@ -199,11 +231,157 @@ select:hover{
 }
 
 .tarjetas{
+    border: 3px solid rgb(85, 170, 255);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    border-radius: 25px;
     display: flex;
     align-items: center;
     justify-items: center;
 }
-a{
-    text-decoration: none;
+.tarjetas:hover{
+    box-shadow: 0px 0px 10px 5px rgb(85, 170, 255);
 }
+.tienda{
+    text-decoration: none;
+    border: 2px solid blue;
+}
+.container:hover{
+    border: 2px solid rgb(85, 170, 255);
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+}
+.iframe-container:hover{
+    border: 2px double rgb(85, 170, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+    height: 450px;
+}
+.descripcion{
+    text-align: justify;
+}
+
+.stock-low{
+    color: red;
+}
+.stock-high{
+    color: white;
+}
+
+
+.text-main{
+    color: white;
+    justify-content: center;
+    font-family: 'Josefin Slab', serif;
+    font-size: 25px;
+    align-items: center;
+    border: 2px double rgb(85, 170, 255);
+    border-radius: 25px;
+    box-shadow: 1px 1px 21px rgb(85, 170, 255);
+}
+
+.color-fuente{
+    color: #62FF00;
+}
+
+.center-load{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+
+
+/*loader*/
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+  }
+  .lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fff;
+    margin: -4px 0 0 -4px;
+  }
+  .lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+  }
+  .lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+  }
+  .lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+  }
+  .lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+  }
+  .lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+  }
+  .lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+  }
+  .lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+  }
+  .lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+  }
+  .lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+  }
+  .lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+  }
+  .lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+  }
+  .lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+  }
+  .lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+  }
+  .lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+  }
+  .lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+  }
+  .lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+  }
+  @keyframes lds-roller {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
  

@@ -9,7 +9,7 @@ particlesJS(
       }
     },
     "color": {
-      "value": "#de0fde"
+      "value": "#E53BFF"
     },
     "shape": {
       "type": "polygon",
@@ -55,7 +55,7 @@ particlesJS(
     },
     "move": {
       "enable": true,
-      "speed": 8.011985930952699,
+      "speed": 3,
       "direction": "none",
       "random": true,
       "straight": false,

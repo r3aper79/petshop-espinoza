@@ -12,8 +12,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/lightbox.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="hidden">
+  <div id="particles-js"></div>
+  <div class="center-load" id="onload">
+    <div class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
   <header id="header-title">
     <img id="header-logo" src="./images/logo1.jpg" alt="...">
     <h1 style="margin: 0;" id="headerH1" class="text-center">Juguetes</h1>
@@ -44,12 +58,11 @@
   </nav>
   <main>
     <div class="row container-fluid d-flex">
-      <div class="filtros col-sm-2 flex-column">
-        <img class="icon" src="./images/twitter.png" alt="">
-        <img class="icon" src="./images/facebook.png" alt="">
+      <div class="filtros col-sm-1 flex-column">
+
       </div>
       <div class="col-sm-10">
-        <div id="contenedor-juguetes" class="container-fluid">
+        <div id="contenedor-juguetes" class="container-fluid my-3">
 
         </div>
       </div>
@@ -82,7 +95,11 @@
     </div>
   </footer>
 
-
+      <script src="./js/sweetAlert.js"></script>
+      <script src="./js/particles.min.js"></script>
+      <script src="./js/particulas.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+      <script src="./js/preloader.js"></script>
       <script src="./js/lightbox-plus-jquery.min.js"></script>
       <script src="./js/lightbox.min.js"></script>
       <script src="./js/main.js"></script>

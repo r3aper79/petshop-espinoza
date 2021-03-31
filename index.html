@@ -12,13 +12,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/lightbox.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
+  <div id="particles-js"></div>
     <header id="header-title">
-      <img id="header-logo" src="./images/logo1.jpg" class="d-none d-sm-none d-md-block" alt="...">
-      <h1 style="margin: 0;" id="headerH1" class="text-center">Bienvenidos</h1>
+      <img class="header-logo" id="header-logo" src="./images/logo1.jpg" class="d-none d-sm-none d-md-block" alt="...">
+      <h1 style="margin: 0;" id="headerH1" class="text-center header-h1">Bienvenidos</h1>
   </header>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid ms-2">
@@ -81,13 +84,19 @@
       </div>  
     </div>
 
-    <div class="row my-5 " style="border: 2px solid blue;">
-      <div class="col-lg-5 pe-5">
+    <div class="row my-5 ms-2 me-2">
+      <div class="col-lg-5 ps-4 pe-4 py-2 d-flex flex-column align-items-center justify-content-center scroll-1 text-main">
         <h1>Sobre Nosotros</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus laboriosam est veniam eum molestiae obcaecati odit inventore consequatur voluptate vero atque, dicta aliquid eaque ex, quod corrupti dolor hic. Quam, ullam excepturi officiis nostrum ipsa magnam vitae corrupti aperiam illum? Omnis voluptas esse et eum dolore atque. Voluptates eos exercitationem maiores vel necessitatibus illo similique modi atque assumenda, nisi laborum dolorem rem nemo praesentium earum minima optio odio a, fugit molestias esse reprehenderit? Est aliquam incidunt mollitia eos dolor repellat harum, quis neque non, natus sit laudantium. Dignissimos odio libero earum autem, non ipsa eligendi reprehenderit, temporibus quaerat at quisquam.</p>
+        <p>
+          Somos una tienda lider en el cuidado de tu mascota, en Franco's Pet-Shop sabemos la importancia
+          del cuidado de la salud de tu mascota, ofreciendote los mejores productos en el mercado y al mejor precio.
+        </p>
+        <p>
+          Asi tambien contamos con juguetes para asegurar la diversion y buen humor de tu mascota.
+        </p>
       </div>
-      <div class="col-md-7 d-flex ps-5" style="border: 2px solid yellow;">
-        <div class="container d-flex album-fotos">
+      <div class="col-md-7 d-flex ps-5">
+        <div class="d-flex album-fotos scroll-2 my-5">
           <div class="col-md-2">
             <a href="./images/pets-1.jpg" data-lightbox="roadtrip">
               <img class="album" id="primero" src="./images/pets-1.jpg" alt="pets.jpeg">
@@ -107,9 +116,36 @@
       </div>
     </div>
   </main>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.686973275929!2d-58.432567884770116!3d-34.612076180457336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405%20CCB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1616686175616!5m2!1ses!2sar" 
-  width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-  <footer>
+  <div class="row ms-3 justify-content-center">
+    <div class="scroll-3 col-sm-6">
+      <h5 style="color: white;font-family: 'Josefin Slab', serif; font-size: 30px;"><strong>¿Donde ubicarnos?</strong></h5>
+      <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.686973275929!2d-58.432567884770116!3d-34.612076180457336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405%20CCB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1616686175616!5m2!1ses!2sar" 
+      width="450" height="400" style="border: 2px solid rgb(85,170,255);border-radius: 25px;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="me-4 ps-5 pe-5 col-sm-5 text-main scroll-5 d-flex justify-content-center align-items-center flex-column">
+      <h1>¿Por que elegirnos?</h1>
+      <ul>
+        <li>
+          <p>
+            Porque somos un negocio responsable, que se preocupa por el bienestar de su macosta.
+          </p>
+        </li>
+        <li>
+          <p>
+            Porque podemos mejorar cualquier presupuesto
+          </p>
+        </li>
+        <li>
+          <p>
+            Disponemos de un amplio horario de atencion al cliente, contando con telefono de emergencias
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer class="scroll-4">
     <div class="container-fluid d-flex">
       <div class="row">
         <div class="h3-container ps-4">
@@ -136,7 +172,9 @@
   </footer>  
 
 
-
+    <script src="./js/reveal.js"></script>
+    <script src="./js/particles.min.js"></script>
+    <script src="./js/particulas.js"></script>
     <script src="./js/lightbox-plus-jquery.min.js"></script>
     <script src="./js/lightbox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
