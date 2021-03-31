@@ -22,7 +22,6 @@ if(document.getElementById('formulario-contacto')){
     else{
         myFormAlert("Gracias por escribirnos!","success","Mensaje Enviado")
         document.getElementById('formulario-contacto').reset()
-        redireccionamiento()
     }
 })
 }
@@ -46,11 +45,6 @@ function buyAlert(){
         timer: 1500
       })
 }
-function redireccionamiento(){
-    setTimeout(()=>{
-        window.location.href = "./index.html"
-    },2800)
-}
 function myNegativeAlert(mensaje , icono , titulo){
     Swal.fire({
         icon: icono,
@@ -63,7 +57,11 @@ function myFormAlert(mensaje , icono , titulo){
         icon: icono,
         title: titulo,
         text: mensaje,
-      }).then(redireccionamiento())
+      }).then((result)=>{
+          if(result.isConfirmed){
+            window.location.href = "./index.html"
+          }
+      })
 }
 
 
